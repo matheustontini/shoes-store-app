@@ -6,9 +6,11 @@ import GlobalStyle from './styles/global';
 import Header from './components/Header';
 import Routes from './routes';
 
+import store from './store';
+
 function App() {
   return (
-      <Provider>
+    <Provider store={store}>
         <BrowserRouter>
             <Header />
             <Routes />
